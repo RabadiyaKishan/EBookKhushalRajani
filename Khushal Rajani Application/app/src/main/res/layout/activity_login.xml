@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Books are a uniquely portable magic"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="20dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="login.json"
+            app:lottie_loop="true" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            style="@style/Theme.MaterialComponents.Light"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:buttonSize="wide"
+            app:colorScheme="auto" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/facebook_signin_btn"
+            android:drawableLeft="@drawable/facebook"
+            android:text="Continue With Facebook"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:theme="@style/MyRandomTheme" />
+
+        <TextView
+            android:id="@+id/terms_and_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="bottom"
+            android:text="Read terms and privacy policy"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

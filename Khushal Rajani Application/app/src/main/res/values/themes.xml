@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EBook" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/logo_color</item>
+        <item name="colorPrimaryVariant">@color/logo_color</item>
+        <item name="colorOnPrimary">@color/logo_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/logo_color</item>
+        <item name="colorSecondaryVariant">@color/logo_color</item>
+        <item name="colorOnSecondary">@color/logo_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ProgressTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/logo_color</item>
+        <item name="colorPrimaryDark">@color/logo_color</item>
+        <item name="colorAccent">@color/logo_color</item>
+    </style>
+
+    <style name="MyRandomTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3B5998</item>
+        <item name="colorPrimaryDark">#3B5998</item>
+        <item name="android:navigationBarColor">#3B5998</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
